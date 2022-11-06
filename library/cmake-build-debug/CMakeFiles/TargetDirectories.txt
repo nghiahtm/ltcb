@@ -1,0 +1,3 @@
+/Users/nghiahoang/CLionProjects/library/cmake-build-debug/CMakeFiles/bt1.dir
+/Users/nghiahoang/CLionProjects/library/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/nghiahoang/CLionProjects/library/cmake-build-debug/CMakeFiles/rebuild_cache.dir
