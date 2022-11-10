@@ -1,15 +1,20 @@
+/*
+ * input: +, - , x ,: , %, 2 số
+ * output: kết quả 2 số. Lặp lại chương trình
+ * flow chart: https://app.diagrams.net/#G1CmN6eyot-vs28PTT64o5DydvzqzKNA4O
+ */
+
 #include <iostream>
 
 using namespace std;
-//input: +, - , x ,: , %, 2 số
-// output: kết quả 2 số. Lặp lại chương trình
+
 const string ds_phep_tinh[] = {
         "Cộng","Trừ","Nhân","Chia","Chia có dư"
 };
 void nhap_dau_phep_tinh(int &dau){
     cout << "Chọn STT để thực hiện phép tính: ",cin >> dau;
     while (dau <= 0 || dau > 5){
-        cout << "Hãy nhập lại STT trong phạm vi từ 1 - 4: ",cin >> dau;
+        cout << "Hãy nhập lại STT trong phạm vi từ 1 - 5: ",cin >> dau;
         cout << "Nhập lại STT: ",cin >> dau;
     }
     string phep_tinh = ds_phep_tinh[dau - 1];;
@@ -47,23 +52,16 @@ void chay_chuong_trinh(){
     int dau, st1, st2;char tiep_tuc;
     cout << "---Menu---" <<  endl;
     cout << "1.Cộng\n2.Trừ\n3.Nhân\n4.Chia\n5.Chia lấy dư\n";
-    nhap_dau_phep_tinh(dau);
-    nhap_hai_so(st1,st2);
-    in_ket_qua(st1, st2, dau);
-    while (true)
-    {
+
+    do {
+        nhap_dau_phep_tinh(dau);
+        nhap_hai_so(st1,st2);
+        in_ket_qua(st1, st2, dau);
         cout << "\n\nBạn có muốn tiếp tục? Y/y để tiếp tục. N/n để dừng chương trình ", cin >> tiep_tuc;
-        if(tiep_tuc == 'y'|| tiep_tuc =='Y')
-        {
-            nhap_dau_phep_tinh(dau);
-            nhap_hai_so(st1,st2);
-            in_ket_qua(st1, st2, dau);
-        }
-        else
-        {
+        if (tiep_tuc != 'y'|| tiep_tuc !='Y') {
             break;
         }
-    }
+    } while (tiep_tuc == 'y'|| tiep_tuc =='Y');
 }
 
 int main() {
