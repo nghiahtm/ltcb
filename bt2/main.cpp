@@ -21,7 +21,7 @@ void nhap_hai_so(int &a, int &b) {
     cout << "Nhập số thứ hai: ", cin >> b;
 }
 
-void tinh_ket_qua(int st1, int st2, int dau)
+void in_ket_qua(int st1, int st2, int dau)
 {
     cout << "Kết quả: ";
     switch (dau) {
@@ -49,7 +49,7 @@ void chay_chuong_trinh(){
     cout << "1.Cộng\n2.Trừ\n3.Nhân\n4.Chia\n5.Chia lấy dư\n";
     nhap_dau_phep_tinh(dau);
     nhap_hai_so(st1,st2);
-    tinh_ket_qua(st1, st2, dau);
+    in_ket_qua(st1, st2, dau);
     while (true)
     {
         cout << "\n\nBạn có muốn tiếp tục? Y/y để tiếp tục. N/n để dừng chương trình ", cin >> tiep_tuc;
@@ -57,7 +57,7 @@ void chay_chuong_trinh(){
         {
             nhap_dau_phep_tinh(dau);
             nhap_hai_so(st1,st2);
-            tinh_ket_qua(st1, st2, dau);
+            in_ket_qua(st1, st2, dau);
         }
         else
         {
