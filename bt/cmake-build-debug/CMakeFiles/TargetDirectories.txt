@@ -1,0 +1,3 @@
+/Users/nghiahoang/c++/ltcb/bt/cmake-build-debug/CMakeFiles/untitled.dir
+/Users/nghiahoang/c++/ltcb/bt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/nghiahoang/c++/ltcb/bt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
